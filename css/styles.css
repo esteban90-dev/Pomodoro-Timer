@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(88, 88, 88);
+}
+
+.container{
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    text-align: center;
+}
+
+h1{
+    font-size: 60pt;
+}
+
+h2{
+    font-size: 50pt;
+}
+
+h3{
+    font-size: 18pt;
+}
+
+.content{
+    border: 2px solid;
+    border-color:rgb(221, 221, 221);
+    border-radius: 10px;
+    padding: 0px 0px 100px 0px;
+}
+
+.top, .bottom{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.session, .break{
+    width: 50%;
+    float: left;
+}
+
+.session-container, .break-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.session-container-left, .session-container-center, .session-container-right, .break-container-left, .break-container-center, .break-container-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-bottom{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.break-left,.break-center,.break-right{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+
+.bottom-bottom-left, .bottom-bottom-center, .bottom-bottom-right{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.button-type-1{
+    width:25px;
+    height:25px;
+    background-color: white;
+    background-color: white;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+.button-type-2{
+    width:75px;
+    height:25px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+
+/*clearfix 
+--------------------------------------------------------------------------------------------------------*/
+.top:after, .bottom-bottom:after{
+    content: "";
+    clear:both;
+    display:table;
+}
