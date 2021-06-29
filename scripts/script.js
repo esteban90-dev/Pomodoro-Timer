@@ -75,7 +75,7 @@ function mouseDown(e){
 
     //start timer
     else if(e.target.innerHTML == "Start" && lastPressedButtonIsStart == 0){
-        lastPressedButtonIsStart = 1;
+        lastPressedButtonIsStart = 1;   //multiple successive clicks of the start button will mess up the timer
         timerController('start');
         noTimeChange = 1;
     }
